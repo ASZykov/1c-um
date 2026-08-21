@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b5e80d66-84df-4ee0-82c7-fe9dc6264738">
+  <producedTypes>
+    <objectType typeId="9b311cf9-4b26-4834-b800-c183e2d18740" valueTypeId="71bc0360-f594-48c4-b7a5-d45ba9c21cc9"/>
+    <refType typeId="c98da2a2-e5b3-44a4-9275-e071cba517a4" valueTypeId="2c60dd89-af26-427f-9eb0-a84a01a8928e"/>
+    <selectionType typeId="58d2c769-f5d2-46db-889c-68cfd564f445" valueTypeId="50d7c99d-ae25-40bf-97d2-5cf954e07be0"/>
+    <listType typeId="b1116743-d029-451c-9e96-627ee7fd7e44" valueTypeId="d161ccc5-04fc-45b1-b2e7-eea6b2b11d37"/>
+    <managerType typeId="3d18755c-4abf-429f-8615-3c99e625f17e" valueTypeId="f45a48c3-e80b-4ce5-8eba-416e61fa13bb"/>
+  </producedTypes>
+  <name>ум_ОписанияОшибокОбработкиПакетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Описания ошибок обработки пакетов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ум_ОписанияОшибокОбработкиПакетов.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст ошибки</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="12d7d3f0-e8dd-4808-bea1-62842e107f14">
+      <name>КонтрольРабочихФЗ_ЗАВЕРШЕНРабочееФЗ</name>
+      <description>Контроль рабочих ФЗ: ЗАВЕРШЕНО АВАРИЙНО рабочее ФЗ</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="9f2abbe4-cf2b-4d54-a1c4-3544b22dd0bf">
+      <name>КонтрольРабочихФЗ_ЗАВЕРШЕНОРабочееФЗ</name>
+      <description>Контроль рабочих ФЗ: ЗАВЕРШЕНО рабочее ФЗ</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="1184c478-50e4-42e6-bfb9-3c49ab7cad13">
+      <name>КонтрольРабочихФЗ_НЕНАЙДЕН</name>
+      <description>Контроль рабочих ФЗ: НЕ НАЙДЕН</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="96259c49-f79c-4412-b44b-6812b51da053">
+      <name>КонтрольРабочихФЗ_НЕНАЙДЕНОРабочеФЗ</name>
+      <description>Контроль рабочих ФЗ: НЕ НАЙДЕНО рабоче ФЗ</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="e6ef53ed-6817-4f86-b0f6-30c469be4a9a">
+      <name>КонтрольРабочихФЗ_ОтмененоПРОСРОЧЕННОЕРабочееФЗ</name>
+      <description>Контроль рабочих ФЗ: отменено ПРОСРОЧЕННОЕ рабочее ФЗ</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="00c39304-8fa7-4e54-a3f0-251188428ec3">
+      <name>КонтрольРабочихФЗ_ОТМЕНЕНРабочееФЗ</name>
+      <description>Контроль рабочих ФЗ: ОТМЕНЕНО рабочее ФЗ</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="64c7f641-49d5-42bf-8bd4-d8115b0bd0a9">
+      <name>КонфликтБлокировокПриВыполненииТранзакции</name>
+      <description>Конфликт блокировок при выполнении транзакции</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="20c5f86b-19f0-4156-8916-058a4986dc26">
+      <name>НеустранимыйКонфликтБлокировок</name>
+      <description>Неустранимый конфликт блокировок</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="24fe2424-f03f-4f6d-a42f-0037a84f986f">
+      <name>ОшибкаПриВызовеМетодаКонтекстаЗаблокировать</name>
+      <description>Ошибка при вызове метода контекста (Заблокировать)</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="f6c862ee-8f90-4d7a-ad24-86634562b887">
+      <name>ПревышеноМаксимальноеВремяОжиданияПредоставленияБлокировки</name>
+      <description>Превышено максимальное время ожидания предоставления блокировки</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ум_ОписанияОшибокОбработкиПакетов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ум_ОписанияОшибокОбработкиПакетов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ум_ОписанияОшибокОбработкиПакетов.Form.ФормаВыбора</defaultChoiceForm>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  <attributes uuid="3cf094bc-3863-45cb-b4d1-265fcc950f55">
+    <name>ВключитьВОбщийСписокОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включить в общий список ошибок для повторной обработки пакета</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="b1d2e1dd-2784-4eea-98e4-e8afb5ed33e4">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e26fda49-8407-47c8-88d1-83fac66e20c9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="be11047e-fda4-478c-888f-229a6b680af4">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff094c67-af48-41ae-a49d-04369adc0d38">
+  <name>ум_Пакеты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пакеты данных (Alt + P)</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>All functions  (Alt + A)</value>
+  </synonym>
+  <group>NavigationPanelImportant</group>
+  <representation>Auto</representation>
+  <shortcut>Alt+P</shortcut>
+</mdclass:CommonCommand>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c4d37b4e-2e1e-47ec-85df-338560c2c59b">
+  <name>ум_ПакетыДанныхОбщегоНазначения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пакеты данных: общего назначения</value>
+  </synonym>
+  <server>true</server>
+  <privileged>true</privileged>
+</mdclass:CommonModule>

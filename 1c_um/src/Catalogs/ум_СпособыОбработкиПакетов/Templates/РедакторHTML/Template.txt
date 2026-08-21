@@ -1,0 +1,369 @@
+// https://github.com/fotov/bsl_html_code_editor
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .editor {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    #lines {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 100%;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      background: #f5f5f5;
+      border-right: 1px solid #ddd;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 3;
+      font: 14px/1.5 Consolas, Monaco, monospace;
+      color: #888;
+      text-align: right;
+      box-sizing: border-box;
+    }
+
+    #lines div {
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+    }
+
+    #hl,
+    #code {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 8px 8px 8px 48px;
+      font: 14px/1.5 Consolas, Monaco, monospace;
+      overflow: auto;
+      white-space: pre;
+      box-sizing: border-box;
+      tab-size: 4;
+    }
+
+    textarea {
+      background: transparent;
+      color: rgba(0, 0, 0, 0.01);
+      z-index: 2;
+      resize: none;
+      border: 0;
+      outline: 0;
+      caret-color: #000;
+    }
+
+    pre {
+      z-index: 1;
+      pointer-events: none;
+      color: #333;
+    }
+
+    /* 1С ключевые слова */
+    .keyword {
+      color: #f00;
+    }
+
+    .identifier {
+      color: #00f;
+    }
+
+    /* Комментарии */
+    .comment {
+      color: #008000;
+    }
+
+    /* Препроцессор */
+    .preproc {
+      color: #963200;
+    }
+
+    /* Аннотации */
+    .annotation {
+      color: #963200;
+    }
+
+    /* Числа */
+    .number {
+      color: #000;
+    }
+
+    /* Строки */
+    .string {
+      color: #000;
+    }
+
+    /* Даты */
+    .date {
+      color: #000;
+    }
+
+    .operator {
+      color: #f00;
+    }
+
+    .error {
+      color: #f80;
+    }
+
+    /* Директивы препроцессора */
+    .dir {
+      color: #800080;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class='editor'>
+    <div id='lines'></div>
+    <pre id='hl'></pre>
+    <textarea id='code' spellcheck='false' autocomplete='off' wrap='off'
+      placeholder='Начните вводить код...'></textarea>
+  </div>
+
+  <script>
+    var ta = document.getElementById('code');
+    var hl = document.getElementById('hl');
+    var lines = document.getElementById('lines');
+    const keywords = 'если if тогда then иначеесли elsif иначе else конецесли endif для for каждого each из in по to пока while цикл do конеццикла enddo ждать await процедура procedure функция function конецпроцедуры endprocedure конецфункции endfunction перем var перейти goto возврат return продолжить continue прервать break и and или or не not попытка try исключение except вызватьисключение raise конецпопытки endtry новый new выполнить execute асинх истина ложь null Неопределено'.split(' ')
+
+    function endLexemExecute(element, props, endLexem) {
+      const lexem = element.slice(props.beginLexem, endLexem)
+      var type = props.lexemType
+      var result
+      if (type == 'identifier' && keywords.includes(lexem.toLowerCase())) {
+        type = 'keyword'
+      } else if (type == 'numberWithDot') {
+        type = 'number'
+      }
+
+      props.beginLexem = endLexem
+      if (type == undefined || lexem.length == 0) {
+        result = lexem
+      } else {
+        result = '<span class="' + type + '">' + lexem + '</span>'
+      }
+      props.lexemType = undefined
+      return result
+    }
+
+    function highlightCode(code) {
+
+      var result = [];
+      var props = {
+        lexemType: undefined,
+        beginLexem: 0
+      }
+
+      // Сначала экранируем HTML
+      //code = code.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      
+      code.split('\n').forEach((element, index) => {
+        let i = 0
+        props.beginLexem = 0
+        while (i < element.length) {
+          let symbol = element[i]
+          let symbolNext = element[i + 1]
+          if (props.lexemType == undefined) {
+            if (symbol == '/' && symbolNext == '/') {
+              props.lexemType = 'comment'
+              result.push(endLexemExecute(element, props, element.length))
+              break
+            } else if (symbol == '#') {
+              props.lexemType = 'preproc'
+              result.push(endLexemExecute(element, props, element.length))
+              break
+            } else if (symbol == '&') {
+              props.lexemType = 'annotation'
+              result.push(endLexemExecute(element, props, element.length))
+              break
+            } else if (symbol == '"' || symbol == '|') {
+              props.lexemType = 'string'
+            } else if (symbol == "'") {
+              props.lexemType = 'date'
+            } else if ('абвгдеёжзийклмнопрстуфхцчшщъыьэюяabcdefghijklmnopqrstuvwxyz_'.includes(symbol.toLowerCase())) {
+              props.lexemType = 'identifier'
+            } else if ('0123456789'.includes(symbol)) {
+              props.lexemType = 'number'
+            } else if (' \t'.includes(symbol)) {
+              props.lexemType = 'whitespace'
+            } else if ('()[]+-*/%<>=~;:.,'.includes(symbol)) {
+              props.lexemType = 'operator'
+              result.push(endLexemExecute(element, props, i + 1))
+            } else {
+              props.lexemType = 'error'
+              result.push(endLexemExecute(element, props, i + 1))
+            }
+          } else if (props.lexemType == 'string' && symbol == '"') {
+            if (symbolNext == '"') {
+              i++
+            } else {
+              result.push(endLexemExecute(element, props, i + 1))
+            }
+          } else if (props.lexemType == 'date' && symbol == "'") {
+            result.push(endLexemExecute(element, props, i + 1))
+          } else if (props.lexemType == 'identifier'
+            && ! 'абвгдеёжзийклмнопрстуфхцчшщъыьэюяabcdefghijklmnopqrstuvwxyz_0123456789'.includes(symbol.toLowerCase())) {
+            result.push(endLexemExecute(element, props, i))
+            continue
+          } else if (props.lexemType == 'number') {
+            if (symbol == '.') {
+              props.lexemType = 'numberWithDot'
+            } else if (! '0123456789'.includes(symbol)) {
+              result.push(endLexemExecute(element, props, i))
+              continue
+            }
+          } else if (props.lexemType == 'numberWithDot' && ! '0123456789'.includes(symbol)) {
+            result.push(endLexemExecute(element, props, i))
+            continue
+          } else if (props.lexemType == 'whitespace' && !(' \t'.includes(symbol))) {
+            result.push(endLexemExecute(element, props, i))
+            continue
+          }
+          i++
+        }
+        result.push(endLexemExecute(element, props, i))
+        result.push('\n')
+      });
+      return result.join('');
+    }
+
+    function render() {
+      var v = ta.value;
+      hl.innerHTML = highlightCode(v);
+
+      var lineCount = v.split('\n').length;
+      var html = '';
+      for (var i = 1; i <= lineCount; i++) {
+        html += '<div>' + i + '</div>';
+      }
+      lines.innerHTML = html;
+    }
+
+    // для доступа из кода 1С привяжем функцию к документу https://forum.infostart.ru/forum9/topic127620/message2317254/
+    document.render = render 
+
+    function syncscroll() {
+      hl.scrollTop = ta.scrollTop;
+      hl.scrollLeft = ta.scrollLeft;
+      lines.scrollTop = ta.scrollTop;
+    }
+
+    ta.addEventListener('input', function () {
+      render();
+      syncscroll();
+    });
+
+    ta.addEventListener('scroll', syncscroll);
+
+    ta.addEventListener('keydown', function (e) {
+      // Tab
+      if (e.keyCode === 9) {
+        e.preventDefault();
+        var start = ta.selectionStart;
+        var end = ta.selectionEnd;
+        
+        // Если есть выделение
+        if (start !== end) {
+          var selectedText = ta.value.substring(start, end);
+          var lines = selectedText.split('\n');
+          
+          if (e.shiftKey) {
+            // Shift+Tab: убираем отступ
+            lines = lines.map(function(line) {
+              if (line.startsWith('\t')) {
+                return line.substring(1);
+              }
+              // Также убираем пробельные отступы (4 пробела)
+              var spacesToRemove = 0;
+              for (var i = 0; i < line.length && i < 4; i++) {
+                if (line[i] === ' ') {
+                  spacesToRemove++;
+                } else {
+                  break;
+                }
+              }
+              return line.substring(spacesToRemove);
+            });
+          } else {
+            // Tab: добавляем отступ
+            lines = lines.map(function(line) {
+              return '\t' + line;
+            });
+          }
+          
+          var newSelectedText = lines.join('\n');
+          ta.value = ta.value.substring(0, start) + newSelectedText + ta.value.substring(end);
+          
+          // Восстанавливаем выделение с учётом изменений
+          var lengthDiff = newSelectedText.length - selectedText.length;
+          ta.selectionStart = start;
+          ta.selectionEnd = end + lengthDiff;
+        } else {
+          // Нет выделения: просто вставляем табуляцию
+          document.execCommand('insertText', false, '\t')
+        }
+        
+        render();
+      }
+
+      // Enter - автоотступ
+      if (e.keyCode === 13) {
+        e.preventDefault();
+        var start = ta.selectionStart;
+        var end = ta.selectionEnd;
+        
+        // Находим предыдущую строку
+        var textBeforeCursor = ta.value.substring(0, start);
+        var lastNewlineIndex = textBeforeCursor.lastIndexOf('\n');
+        var previousLine = lastNewlineIndex >= 0 
+          ? textBeforeCursor.substring(lastNewlineIndex + 1, start)
+          : textBeforeCursor;
+        
+        // Подсчитываем количество ведущих табуляций
+        var indent = '';
+        for (var i = 0; i < previousLine.length; i++) {
+          if (previousLine[i] === '\t') {
+            indent += '\t';
+          } else {
+            break;
+          }
+        }
+        
+        // Вставляем перенос строки и отступ через execCommand для сохранения истории
+        document.execCommand('insertText', false, '\n' + indent);
+        
+        render();
+      }
+
+    });
+
+    // Инициализация
+    render();
+  </script>
+</body>
+
+</html>

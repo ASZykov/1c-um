@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ea6797c-22ef-42f4-947f-d7d26518ba1f">
+  <producedTypes>
+    <managerType typeId="b08519e9-4e4d-4981-9695-4d06ca028a80" valueTypeId="cd3513f8-1e5c-4dc2-90b2-ebc96ca2d104"/>
+    <valueManagerType typeId="77dfdc88-5a20-40b6-be63-a9965136b9cf" valueTypeId="7fa4d568-b73f-4ad1-b04f-739699a7b4dd"/>
+    <valueKeyType typeId="b5b7c88e-26be-49ac-89fa-31b8d3efe16a" valueTypeId="4ffd0e61-e461-459f-b19c-30647420ef4d"/>
+  </producedTypes>
+  <name>ум_ТаймаутУдаленияЛоговФЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Таймаут удаления логов ФЗ (Часы)</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

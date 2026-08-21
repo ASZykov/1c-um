@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<distributionSupport:DistributionSupport xmlns:distributionSupport="http://g5.1c.ru/v8/dt/distribution/model" version="6" updateAvailable="true">
+  <distributives key="abb75d89-c60e-4f8f-b4b9-f2f97cc0afb5" value="WarningMode"/>
+  <distributives key="47c5d5cf-2a39-4791-808b-1d240cfc36e4" value="WarningMode"/>
+  <distributives key="e9c609cf-46ad-49ab-a8fe-c1a370c62c07" value="WarningMode"/>
+  <distributives key="5faaa60f-fda5-4a93-ade0-20aa94500e14" value="WarningMode"/>
+  <distributives key="132ad8d0-3b10-48f4-9e42-96e3478510ba" value="WarningMode"/>
+  <distributives key="80d88710-62f2-48b3-b2a7-b798d203e021" value="WarningMode"/>
+  <distributives key="feba8280-d946-491b-a801-9750483383ef" value="WarningMode"/>
+  <distributives key="0d651d40-d81d-4935-8904-101dd9d02dda" value="WarningMode"/>
+  <distributives key="d387cdc6-c634-4344-8d9f-b27551361f3c" value="WarningMode"/>
+  <distributives key="4b90e2fc-5fa5-405b-8276-2e2735a7289e" value="WarningMode"/>
+  <distributives key="be81dcfc-7eb5-44b9-884b-b6263b046b7e"/>
+  <distributives key="bd5ec075-b0fa-4481-ac00-d861ec0cd8f7" value="WarningMode"/>
+  <distributives key="ae966cb5-b274-4f3a-8da1-408ff3ca239e" value="WarningMode"/>
+  <distributives key="8f46f235-7582-454a-aa8d-be46df4f4f43" value="WarningMode"/>
+  <distributives key="d44a57c2-a5a9-49d5-9bdf-2ad166f2cf8e"/>
+  <distributives key="95923c42-83c5-4bc4-99ab-2758beafbd12"/>
+  <distributives key="0461b488-58f9-42b1-b362-9bc9604fcc50" value="WarningMode"/>
+  <distributives key="0961a008-64fd-4b5c-a61b-fe5e7c57436f" value="WarningMode"/>
+  <distributives key="9f4df1e3-87de-466e-b875-c5063cf3ea60" value="WarningMode"/>
+  <distributives key="2a9e6844-8a23-47e0-85d1-774c551100b8"/>
+  <distributives key="e7f9b1c4-cf8e-4a69-b502-d859d1aac466" value="WarningMode"/>
+  <distributives key="2ce6350e-733e-45aa-ba28-e5d77ccf6c00"/>
+  <distributives key="4af703ed-b01d-464a-bb87-674a44d3110c"/>
+  <distributives key="4475dc2d-3edb-4af4-8fa0-1026f8131efa" value="WarningMode"/>
+  <distributives key="17af2b34-c71d-4263-a5c5-74d0aa6b922e"/>
+  <distributives key="072a7e34-61a2-40ca-9775-b8e2c1d11d7d" value="WarningMode"/>
+  <distributives key="793bc17a-6399-4050-93f9-6c3d0869f041" value="WarningMode"/>
+  <distributives key="5baad87a-8f91-4007-b412-1fea0d5653ad" value="WarningMode"/>
+  <distributives key="b739a7fa-52b6-4696-8278-179a529097f2" value="WarningMode"/>
+  <distributives key="b53350f9-bfbc-49c0-abca-7c5ea9e09c3c" value="WarningMode"/>
+  <distributives key="50e65af9-9491-489f-96ce-4b541d8b87c7" value="WarningMode"/>
+  <distributives key="83dab82f-fe7e-4443-b65b-6284b025da0e"/>
+  <distributives key="578746ef-69e0-4efc-a307-4b372006525c" value="WarningMode"/>
+  <distributives key="b5e80d66-84df-4ee0-82c7-fe9dc6264738" value="WarningMode"/>
+  <distributives key="09e528e6-39a9-4098-b346-558827d7e59d"/>
+  <distributives key="b08f0c2c-9957-456b-b869-fa46e698299d"/>
+  <distributives key="cbe8bb5b-8f7d-4c9d-a126-590deef53f25"/>
+  <distributives key="df51c68a-0291-4813-93a0-16b27e2745e3" value="WarningMode"/>
+  <distributives key="03593311-70b7-4422-9001-1ddc4bfbafec" value="WarningMode"/>
+  <distributives key="2c1b0111-b100-4599-8eff-6d4e0f3fb9e8"/>
+  <distributives key="011433e5-5d3c-459c-aa25-0e462e97434a"/>
+  <distributives key="079c6229-f003-4344-a9e5-4a8d7631cdb9"/>
+  <distributives key="5a23c6c7-087d-4af1-beb7-a4b4b8a8c9a6" value="WarningMode"/>
+  <distributives key="00b2575a-26e7-477d-8fa6-58e3070c1af4" value="WarningMode"/>
+  <distributives key="9f0ae4da-bbb2-4758-98a2-93ec3bd73639"/>
+  <distributives key="1271405d-06c3-4ea1-ad49-509939ff2623" value="WarningMode"/>
+  <distributives key="f2fa5a5d-976d-4873-ba2e-430a1ff484f2" value="WarningMode"/>
+  <distributives key="2d046e24-a746-4acf-bf05-39ae0d07d322" value="WarningMode"/>
+  <distributives key="8a909864-389d-43d8-9043-79f48e63f8fc" value="WarningMode"/>
+  <distributives key="a9ce52eb-dfe3-41ae-8a88-79764fdfa493" value="WarningMode"/>
+  <distributives key="08f6ad2e-f131-4426-ad35-001417143c4f" value="WarningMode"/>
+  <distributives key="3726bb13-2d08-4beb-a97f-8918d6cca00c" value="WarningMode"/>
+  <distributives key="4b858483-2d5f-49b5-836e-644b7860eeee" value="WarningMode"/>
+  <distributives key="b1249c03-fac6-4b95-837d-13a7461d538b" value="WarningMode"/>
+  <distributives key="2ad15f31-a392-4f09-869d-ec037235a56f" value="WarningMode"/>
+  <distributives key="3b8fc90d-739f-40c1-aadf-2ad420c1a856" value="WarningMode"/>
+  <distributives key="4cd040b6-3fdb-4e41-bbf4-c6719e29db42" value="WarningMode"/>
+  <distributives key="58305276-32ad-4bb0-894b-29bef3be4943" value="WarningMode"/>
+  <distributives key="f2f49428-aaff-4ef6-a288-fed92bb6f954" value="WarningMode"/>
+  <distributives key="0ca8a056-665d-441f-b413-c36442a3b113" value="WarningMode"/>
+  <distributives key="b6b87d16-0ea1-4188-85de-077600df7fd6" value="WarningMode"/>
+  <distributives key="12460c8b-c43c-45b0-8267-f84a50e8d1c7" value="WarningMode"/>
+  <distributives key="3f1187f2-38b7-47ce-becf-094525620a66" value="WarningMode"/>
+  <distributives key="dd77340c-e3f2-4787-af0f-317880be475b" value="WarningMode"/>
+  <distributives key="08c4140c-58c6-42cb-83a5-c9d485b3305e" value="WarningMode"/>
+  <distributives key="c330a82a-ec43-4362-b7dc-47f1acba2c63" value="WarningMode"/>
+  <distributives key="552fe0bf-816b-4965-a6ef-2a151307f8fa" value="WarningMode"/>
+  <distributives key="44591792-760d-4c99-9d81-020b74a43809" value="WarningMode"/>
+  <distributives key="7e2d36e8-ffa4-46d4-9a54-da5021c5c2d7" value="WarningMode"/>
+  <distributives key="f5142e26-cd0b-47d0-9a90-7536ef7e65f5" value="WarningMode"/>
+  <distributives key="fcf10ed6-270c-4943-88d2-92f0b833b351" value="WarningMode"/>
+  <distributives key="3a5b95aa-5220-4c70-9949-51a59c1c35a4"/>
+  <distributives key="3749da30-79e4-4cc2-89a3-dbb6aabfb77e" value="WarningMode"/>
+  <distributives key="811466c5-7d5b-40ce-8733-ac3a618d4655" value="WarningMode"/>
+  <distributives key="8e341724-cb1d-4db0-884e-5920b4bf204d" value="WarningMode"/>
+  <distributives key="7e5c0d99-0d08-4234-9de9-f021f4d6cb0b" value="WarningMode"/>
+  <distributives key="69313b03-c5d3-4e9b-8cdf-4fb6b53fc83c"/>
+  <distributives key="2bb06607-b54a-4475-a209-a04d417d85da" value="WarningMode"/>
+  <distributives key="e4663632-80e4-4d97-addb-041421fe2a74" value="WarningMode"/>
+  <distributives key="cb8ee422-d810-4cf6-a783-7528cd1b8b51" value="WarningMode"/>
+  <distributives key="d2042bbe-6e1c-4fd8-82e9-639cbe0f3964" value="WarningMode"/>
+  <distributives key="28d64b80-4ee5-4a03-b701-8fb1ab88181c" value="WarningMode"/>
+  <distributives key="78fb21db-917e-4d42-977b-a35d0ea0d274" value="WarningMode"/>
+  <distributives key="6e48de71-65cb-410f-a5d8-e324784aad41" value="WarningMode"/>
+  <distributives key="68904e4e-51db-4797-b29b-c58cc366ba74"/>
+  <distributives key="dfdd9faf-0655-4200-b7d1-0d60c3847e36"/>
+  <distributives key="123ba20d-bc19-4ec9-9ad2-1d5e1042fef1"/>
+  <distributives key="b1941f0f-bbdb-42e8-aaa8-9cc2fc9da35b" value="WarningMode"/>
+  <distributives key="67716fe7-f065-4317-b7fd-4a4a3a5ee8c7" value="WarningMode"/>
+  <distributives key="09079720-accf-4bc3-b5c2-be0501db0d15" value="WarningMode"/>
+  <distributives key="7a00ab2b-13e7-44df-84b4-55f0ea3335a0" value="WarningMode"/>
+  <distributives key="1b1f2ced-205f-4346-91ea-099d39d69773" value="WarningMode"/>
+  <distributives key="8affaebd-0824-4ee4-a151-0edfb7cf7f2a" value="WarningMode"/>
+  <distributives key="b0c38613-219d-4978-a13a-2c574d3d959b" value="WarningMode"/>
+  <distributives key="86b39bef-e0e0-42e4-8020-d0f452efcac5" value="WarningMode"/>
+  <distributives key="2515d301-5f14-463f-9d06-6bb0112ae056" value="WarningMode"/>
+  <distributives key="6e670b9a-be3a-4042-8cb3-b93854725880" value="NotIncludeInUserConfigByDefault"/>
+  <objectModules key="123ba20d-bc19-4ec9-9ad2-1d5e1042fef1" value="true"/>
+  <objectModules key="68904e4e-51db-4797-b29b-c58cc366ba74" value="true"/>
+  <objectModules key="dfdd9faf-0655-4200-b7d1-0d60c3847e36" value="true"/>
+  <objectModules key="6e670b9a-be3a-4042-8cb3-b93854725880" value="false"/>
+</distributionSupport:DistributionSupport>

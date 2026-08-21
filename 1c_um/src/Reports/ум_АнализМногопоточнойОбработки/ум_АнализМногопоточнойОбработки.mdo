@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b5bfbe8e-09b0-4b84-aa3c-7286c256aba2">
+  <producedTypes>
+    <objectType typeId="8ca89b19-bf69-4fb3-bdeb-090411cbe7d3" valueTypeId="7736f0c8-8d9d-4d27-acc4-86213ea42567"/>
+    <managerType typeId="c2320ca8-2cab-46b9-9bdf-eda60806c903" valueTypeId="d2fc4c52-f72c-4e25-b7aa-34bc9d1543b8"/>
+  </producedTypes>
+  <name>ум_АнализМногопоточнойОбработки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ многопоточной обработки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ум_АнализМногопоточнойОбработки.Form.Форма</defaultForm>
+  <forms uuid="1dc81015-c172-4a4f-9db3-efc71262c977">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Report>

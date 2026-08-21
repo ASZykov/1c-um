@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c8506ee-d59d-43f0-b818-016887e6722f">
+  <producedTypes>
+    <refType typeId="2afaaf85-5172-4ab0-99f5-b287e3b4106a" valueTypeId="703a6a06-edfd-4f19-980e-43df08241523"/>
+    <listType typeId="3f7ab5ff-0a79-473c-a9e4-1710a87f841e" valueTypeId="ce82a5a5-63b1-4a92-b710-fef86f635a86"/>
+    <managerType typeId="02df61a4-3dcf-4288-99cd-24be0392860b" valueTypeId="71e76179-0487-4e0a-8c3c-f99252809c7e"/>
+  </producedTypes>
+  <name>ум_ВидыФЗПакетовДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды фоновых заданий пакетов</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="70efcf19-2694-4bcf-851c-c445debb6b2f">
+    <name>РегламентноеЗаданиеОбработкаПакетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регламентное задание обработка пакетов</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9ff09a20-e53c-4b8f-a137-323d2ca23e8c">
+    <name>РегламентноеЗаданиеКонтрольРабочихФЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регламентное задание контроль рабочих ФЗ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f0ee2a6d-2cee-46ba-a9ab-236b2a401f4c">
+    <name>УпровляющееФЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Упровляющее ФЗ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="64d4315c-f2b2-4e0f-bc4c-b2e0880e155f">
+    <name>РабочееФЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочее ФЗ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="59a2a9b5-802d-4c30-a6ef-4405e980d5f3">
+    <name>РегламентноеЗаданиеОбслуживаниеСистемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регламентное задание обслуживание системы</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

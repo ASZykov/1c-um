@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СпособОбработки</dataPath>
+			<field>СпособОбработки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+			<orderExpression>
+				<dcscom:expression>ПорядокСтатуса</dcscom:expression>
+				<dcscom:orderType>Asc</dcscom:orderType>
+				<dcscom:autoOrder>false</dcscom:autoOrder>
+			</orderExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПорядокСтатуса</dataPath>
+			<field>ПорядокСтатуса</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порядок статуса</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	"К обработке" КАК Статус,
+	ЗНАЧЕНИЕ(Перечисление.ум_СостоянияПакетаДанных.КОбработке) КАК ЗначениеСтатуса,
+	ЛОЖЬ КАК ПакетОтложен,
+	1 КАК ПорядокСтатуса
+ПОМЕСТИТЬ ЗначенияСтатусов
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Отложен",
+	ЗНАЧЕНИЕ(Перечисление.ум_СостоянияПакетаДанных.КОбработке),
+	ИСТИНА,
+	2
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"В обработке",
+	ЗНАЧЕНИЕ(Перечисление.ум_СостоянияПакетаДанных.ВОбработке),
+	ЛОЖЬ,
+	0
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Обработан",
+	ЗНАЧЕНИЕ(Перечисление.ум_СостоянияПакетаДанных.Обработан),
+	ЛОЖЬ,
+	3
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Ошибка",
+	ЗНАЧЕНИЕ(Перечисление.ум_СостоянияПакетаДанных.Ошибка),
+	ЛОЖЬ,
+	4
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПакетыПоСтатусам.СпособОбработки,
+	ЗначенияСтатусов.Статус,
+	ВЫБОР
+		КОГДА ПакетыПоСтатусам.Состояние = ЗначенияСтатусов.ЗначениеСтатуса
+				И ЗначенияСтатусов.ПакетОтложен = ПакетыПоСтатусам.ПакетОтложен
+			ТОГДА ПакетыПоСтатусам.КоличествоПакетов
+		ИНАЧЕ 0
+	КОНЕЦ КАК Количество,
+	ЗначенияСтатусов.ПорядокСтатуса
+ИЗ
+	(ВЫБРАТЬ
+		ум_ПакетыДанных.СпособОбработки КАК СпособОбработки,
+		ум_ПакетыДанных.Состояние КАК Состояние,
+		ВЫБОР
+			КОГДА ум_ПакетыДанных.Состояние = ЗНАЧЕНИЕ(перечисление.ум_СостоянияПакетаДанных.КОбработке)
+				ТОГДА ВЫБОР
+						КОГДА ум_ПакетыДанных.СпособОбработки.Активность
+							ТОГДА ЛОЖЬ
+						ИНАЧЕ ИСТИНА
+					КОНЕЦ
+			ИНАЧЕ ЛОЖЬ
+		КОНЕЦ КАК ПакетОтложен,
+		КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ум_ПакетыДанных.ИдентификаторПакета) КАК КоличествоПакетов
+	ИЗ
+		РегистрСведений.ум_ПакетыДанных КАК ум_ПакетыДанных
+	
+	СГРУППИРОВАТЬ ПО
+		ум_ПакетыДанных.Состояние,
+		ум_ПакетыДанных.СпособОбработки,
+		ВЫБОР
+			КОГДА ум_ПакетыДанных.Состояние = ЗНАЧЕНИЕ(перечисление.ум_СостоянияПакетаДанных.КОбработке)
+					И ум_ПакетыДанных.СпособОбработки.Активность
+				ТОГДА ЛОЖЬ
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ,
+		ВЫБОР
+			КОГДА ум_ПакетыДанных.Состояние = ЗНАЧЕНИЕ(перечисление.ум_СостоянияПакетаДанных.КОбработке)
+				ТОГДА ВЫБОР
+						КОГДА ум_ПакетыДанных.СпособОбработки.Активность
+							ТОГДА ЛОЖЬ
+						ИНАЧЕ ИСТИНА
+					КОНЕЦ
+			ИНАЧЕ ЛОЖЬ
+		КОНЕЦ) КАК ПакетыПоСтатусам
+		ЛЕВОЕ СОЕДИНЕНИЕ ЗначенияСтатусов КАК ЗначенияСтатусов
+		ПО (ИСТИНА)</query>
+	</dataSet>
+	<totalField>
+		<dataPath>Количество</dataPath>
+		<expression>Сумма(Количество)</expression>
+	</totalField>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Количество</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеПолейГруппировки</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">End</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">BeginAndEnd</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Статус</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>СпособОбработки</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:row>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

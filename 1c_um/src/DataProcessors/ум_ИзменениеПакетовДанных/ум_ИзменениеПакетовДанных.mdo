@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3726bb13-2d08-4beb-a97f-8918d6cca00c">
+  <producedTypes>
+    <objectType typeId="07cdc6c2-55b6-4dea-af22-47419bc1c6a0" valueTypeId="ba08bc4c-3c30-4266-97a8-5cca375e65ce"/>
+    <managerType typeId="85ab0c45-31c6-41d2-9d81-b061c5e083ad" valueTypeId="473af1c0-1563-457e-86cf-39a10a00832b"/>
+  </producedTypes>
+  <name>ум_ИзменениеПакетовДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение пакетов данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ум_ИзменениеПакетовДанных.Form.Форма</defaultForm>
+  <forms uuid="1fd23f65-55a8-4966-b386-853d579c6b79">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="31756b76-3af9-474a-bcf8-5e262323fc88">
+  <producedTypes>
+    <selectionType typeId="83debf02-a7fc-4db6-b3a5-58e395105fdc" valueTypeId="1577c4d6-0c6f-4087-a8e1-7a46c1980149"/>
+    <listType typeId="7d7a986d-ed78-47be-b669-17182af87a98" valueTypeId="d8734288-329a-4df5-baca-d49937c49aac"/>
+    <managerType typeId="d12f3579-7a74-48ee-9c2a-f5688c99b4ba" valueTypeId="ce61a9de-a45b-4e93-8980-03eda375e5f0"/>
+    <recordSetType typeId="64497cb9-65a0-4ec7-af4d-782c79097f71" valueTypeId="1859c03b-aa5e-479f-9d67-05d82f273a35"/>
+    <recordKeyType typeId="cd46f9d6-0d69-4d86-bd42-48a5ecdab2a0" valueTypeId="dbec8cfc-f874-48b1-ac7b-59adc0a37e38"/>
+    <recordType typeId="abed9c40-9c07-4979-98ff-a7a94ebdd5d1" valueTypeId="94089fa7-5a6b-4dc5-b565-fa699362c753"/>
+    <recordManagerType typeId="0bbb45f8-8bf4-46da-b379-0c6672b41cfc" valueTypeId="993ed500-7957-433e-ad70-2ece443254c7"/>
+  </producedTypes>
+  <name>ум_ЛогФоновыхЗаданийПакетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лог фоновых заданий пакетов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ум_ЛогФоновыхЗаданийПакетов.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="93c741cd-a042-430b-80e2-4a2f5eacc489">
+    <name>Вид</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ум_ВидыФЗПакетовДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="6e84c204-bb1a-4f61-8b3b-a7c7f421581a">
+    <name>ИдентификаторРодительскогоФЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор родительского ФЗ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0149da21-57ab-485d-b277-15a22cfdcc19">
+    <name>СпособОбработкиПакетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ обработки пакетов</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ум_СпособыОбработкиПакетов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <attributes uuid="e81926b5-dce1-4883-ac5f-bc52a1b1617d">
+    <name>ДанныеСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные события</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <dimensions uuid="74cd98f9-627b-4ab0-a13e-e4d651a26420">
+    <name>ИдентификаторФЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор ФЗ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="63c4d6b3-8413-481f-a9b7-809408f30a99">
+    <name>ВременнаяМеткаСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Временная метка события</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="99f9bbc8-b589-4c5a-a114-115d39abdd6d">
+    <name>Событие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ум_ЛогированиеСобытийФЗ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="6d1f6ed8-b600-437e-815e-a83e73dd0515">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

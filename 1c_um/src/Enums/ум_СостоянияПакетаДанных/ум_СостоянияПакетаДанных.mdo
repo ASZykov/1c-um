@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44591792-760d-4c99-9d81-020b74a43809">
+  <producedTypes>
+    <refType typeId="032a3262-be6b-4fca-adb5-cedfc930b181" valueTypeId="fec9c924-c61a-4fd6-b49c-cd3f89b1d218"/>
+    <listType typeId="87044234-d3f3-4547-8fd8-9999063710a3" valueTypeId="78e515f1-bddc-46b1-8086-a8cfde5ab4b9"/>
+    <managerType typeId="440e33fc-8380-485b-ba05-6d02a1b3229b" valueTypeId="be201a4a-960b-4fc4-8bfc-21899958f3f5"/>
+  </producedTypes>
+  <name>ум_СостоянияПакетаДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние пакета данных</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="362555b1-bc5b-4208-ae92-03328d95e3b7">
+    <name>ВОбработке</name>
+    <synonym>
+      <key>ru</key>
+      <value>В обработке</value>
+    </synonym>
+    <color xsi:type="core:ColorRef">
+      <color>Web.LemonChiffon</color>
+    </color>
+  </enumValues>
+  <enumValues uuid="af709aaa-4b55-4ed7-a395-56a186e30bd0">
+    <name>КОбработке</name>
+    <synonym>
+      <key>ru</key>
+      <value>К обработке</value>
+    </synonym>
+    <color xsi:type="core:ColorRef">
+      <color>Web.White</color>
+    </color>
+  </enumValues>
+  <enumValues uuid="9820583b-c317-4353-9ad6-c687ae59aae5">
+    <name>Обработан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработан</value>
+    </synonym>
+    <color xsi:type="core:ColorRef">
+      <color>Web.MediumGreen</color>
+    </color>
+  </enumValues>
+  <enumValues uuid="6cce090b-d6f9-4c9f-9075-e35275bb36f0">
+    <name>Ошибка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка</value>
+    </synonym>
+    <color xsi:type="core:ColorRef">
+      <color>Web.Pink</color>
+    </color>
+  </enumValues>
+</mdclass:Enum>

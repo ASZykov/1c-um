@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="be81dcfc-7eb5-44b9-884b-b6263b046b7e">
+  <producedTypes>
+    <objectType typeId="4ac24a19-373f-42bd-9e6a-e15e30e26ade" valueTypeId="eec1eb20-8fa5-4102-b93c-49c4b7cdd237"/>
+    <refType typeId="b9a2300a-f2dd-464a-9c96-5a9b60f66d24" valueTypeId="4fcf53c5-39fc-4c33-89c1-387728248b25"/>
+    <selectionType typeId="16b34805-1928-422a-9053-633cdde2c225" valueTypeId="43174c37-a44c-4091-9140-131e1cf31d79"/>
+    <listType typeId="645b68f0-5c90-49e6-8627-a153ed831919" valueTypeId="e831506f-1be2-4fd9-9fce-e7035a2dabce"/>
+    <managerType typeId="01a20714-f715-4783-867b-0c66895cfcdc" valueTypeId="2753fc3d-e1fd-452f-aa69-3ec14b6ff321"/>
+  </producedTypes>
+  <name>ум_СпособыОбработкиПакетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы обработки пакетов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ум_СпособыОбработкиПакетов.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="96536943-8bde-41d0-bcd2-61b1c5ce945d">
+      <name>МногопоточноеИзменениеПакетовДанных</name>
+      <description>Многопоточное изменение пакетов данных</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="fa8c73bc-c9d1-4b9b-8ef5-ebf71b749199">
+      <name>ОчисткаЛоговФЗ</name>
+      <description>Очистка логов ФЗ</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="33e9d295-5dba-433b-ab13-8592f91e4de6">
+      <name>ПакетыДанныхОбслуживание</name>
+      <description>Регламентное обслуживание пакетов данных</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ум_СпособыОбработкиПакетов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ум_СпособыОбработкиПакетов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ум_СпособыОбработкиПакетов.Form.ФормаСписка</defaultChoiceForm>
+  <attributes uuid="5f1cdd69-5992-40d2-8077-1826e908cae5">
+    <name>Активность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активность</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="eb0acf23-2e7f-4d5b-9d53-ef813e2301b6">
+    <name>ИмяФункции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя функции</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="507c1667-73c7-42e9-8612-0d5afe8ae4dc">
+    <name>ИмяДляРазработчика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя для разработчика</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bf9919f0-1645-4b13-9980-a8bbd37558bc">
+    <name>ВремяЖизниУправляющегоФЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время жизни управляющего ФЗ (сек.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>60</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2f2a397c-00fc-416e-bd43-ba98e8e94763">
+    <name>КоличествоПакетовНаУправляющееФЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество пакетов на управляющее ФЗ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="63248fc8-e98e-4c4b-ad64-a93a9cb98e85">
+    <name>КоличествоРабочихФЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество параллельных рабочих ФЗ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>1</value>
+    </minValue>
+    <maxValue xsi:type="core:StringValue">
+      <value>100</value>
+    </maxValue>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>5</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="78880c01-b913-4911-b058-fd824a4ab60f">
+    <name>ВремяЖизниРабочегоФЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время жизни рабочего ФЗ (сек.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5023113b-9749-40de-a35b-2615e7a814ca">
+    <name>КоличествоПакетовНаРабочееФЗ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество пакетов на одно рабочее ФЗ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>1</value>
+    </minValue>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>1</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a8fa3ccb-3856-4496-b57d-bd5e26e2bf19">
+    <name>КоличествоПопытокОбработкиПакета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество попыток обработки пакета</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>1</value>
+    </minValue>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>10</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f920fe5e-6b18-4e23-9520-86fca0c88a4d">
+    <name>ПовторнаяОбработкаПакетовСОшибками</name>
+    <synonym>
+      <key>ru</key>
+      <value>Повторная обработка пакетов с ошибками</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2f79fbe3-ae27-439a-8b51-891b4a4d95e4">
+    <name>ТаймаутПовторнойОбработкиПакета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут повторной обработки пакета (сек.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>120</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4e2ebfaa-95b0-4965-a631-54852072f89e">
+    <name>УдалятьПакетПриУспешнойОбработке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалять пакеты при успешной обработке</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a00bf1ff-4017-4131-8525-3ee7e077b2a1">
+    <name>ТаймаутУдаленияПакета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут удаления пакета (часы)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:NumberValue">
+      <value>24</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1144cea7-3d69-4710-bbc1-a3ba5a54ae0c">
+    <name>ИспользоватьОбщийСписокОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать общий список ошибок</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fec56cc3-bad3-4ce6-866c-054d11e927b2">
+    <name>ИспользоватьПроизвольныйКодОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать произвольный код обработки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0415b33a-88f9-4243-81f1-95c285e225cd">
+    <name>ПроизвольныйКодОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Произвольный код обработки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fffdc2d7-fd69-4224-a52e-f767fa06c46d">
+    <name>ХешСуммаПроизвольногоКодаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хеш сумма произвольного кода обработки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="78310b00-b4da-4965-9c4c-4a001de8666f">
+    <name>КлючРегламентногоЗадания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ регламентного задания</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f2bdae19-c4b8-427d-a3d3-959453451056">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="432c28b9-0a04-4d0c-9b78-171774b80171">
+    <producedTypes>
+      <objectType typeId="dbc71ad6-4a70-4804-aadb-4df4ff20d0b4" valueTypeId="e88e0774-0457-4833-bddb-0a56fff9d0b1"/>
+      <rowType typeId="f469409a-108b-4938-a9e3-69c9a0630d47" valueTypeId="fe19c354-4e3d-4259-ac38-e88f36f61a19"/>
+    </producedTypes>
+    <name>ОшибкиОбработкиПакетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибки обработки пакетов</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="7ebcd14c-2b83-4105-bc25-78ecb6282c15">
+      <name>ОписаниеОшбики</name>
+      <synonym>
+        <key>ru</key>
+        <value>Описание ошбики</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ум_ОписанияОшибокОбработкиПакетов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="4e6fe499-627e-4640-ae09-9777e6806e37">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="04bf174e-242c-4819-8f6f-587cd25af090">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="28a4b55d-92b0-4a86-b7bf-3cd90f53e41d">
+    <name>РедакторHTML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактор HTML</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="23d1b900-d060-456e-8cbd-b58f9732b3ca">
+    <name>ПроизвольныйКодПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Произвольный код по умолчанию</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="9289fda6-5799-4069-bc35-cf3b2d7aaf7f">
+    <name>ПроизвольныйКодЗаписьОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Произвольный код запись объектов</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="8bcdd4f5-5f1b-4ac6-850a-cee550cf9e96">
+    <name>ПроизвольныйКодПроведениеДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Произвольный код проведение документов</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="a0634f92-807f-4b7c-9f37-9c062f4576c0">
+    <name>ПроизвольныйКодНепосредственноеУдалениеОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Произвольный код удаление объектов (непосредственное)</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:Catalog>

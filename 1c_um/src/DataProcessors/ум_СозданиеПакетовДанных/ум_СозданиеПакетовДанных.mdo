@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f79f1f60-8e2f-4d72-b647-d400c482e00e">
+  <producedTypes>
+    <objectType typeId="9d583d90-8fc9-4667-8fb3-7da821d84f4f" valueTypeId="5b1d237a-5ebe-4a31-b08e-6b9c43c502b9"/>
+    <managerType typeId="83cd7c59-21ec-4b01-87a0-782671fad7d2" valueTypeId="64108924-c5c0-49c1-91b0-659ba30f975d"/>
+  </producedTypes>
+  <name>ум_СозданиеПакетовДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создание пакетов данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ум_СозданиеПакетовДанных.Form.Форма</defaultForm>
+  <forms uuid="257dd85e-d1ed-493a-a6e5-2558155e667f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="84856363-40e9-46ea-ba60-087dfea9e390">
+    <name>ФормаВыбораТипаОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбора типа объекта</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="bbade80a-ca5e-4c32-a351-37eb613b8246">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

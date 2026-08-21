@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="189d9d6b-cc6a-4f93-b166-bdaeafc13668">
+  <producedTypes>
+    <objectType typeId="fd4c13ea-7b58-4da1-861e-96f4d52196b3" valueTypeId="fd964b36-080b-4d97-a30b-005bd3158975"/>
+    <refType typeId="e1b6fcba-dd7c-4902-8daa-9682993ed230" valueTypeId="fff2126b-8768-4018-9068-80eca79573a4"/>
+    <selectionType typeId="6d8f2108-7cd4-445f-9c8e-b96ff07dc544" valueTypeId="2138747c-fed9-4fb0-9b4b-f7518083d1ca"/>
+    <listType typeId="5fc6ec74-90c6-44a7-b12e-8dd100b595ca" valueTypeId="f7971ba0-d890-43af-84c0-e97f743aede5"/>
+    <managerType typeId="d8f5a8d5-bdd7-4489-afb9-7da7b60d6dac" valueTypeId="041e70a7-ff5e-4899-aa98-46d3d0a978c9"/>
+  </producedTypes>
+  <name>ум_КлючиАналитикиПакетовДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ключи аналитики пакетов данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ум_КлючиАналитикиПакетовДанных.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ум_КлючиАналитикиПакетовДанных.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="e2389d16-4c98-442d-9c65-6b8bc6ee27b6">
+    <name>СпособОбработкиПакетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ обработки пакетов</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ум_СпособыОбработкиПакетов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fafba816-e45e-43a6-977c-ea077db798c2">
+    <name>СостояниеПакетаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние пакета данных</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ум_СостоянияПакетаДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="de8a8f66-fec4-4dcf-90fd-903255898d56">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

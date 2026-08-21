@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a23c6c7-087d-4af1-beb7-a4b4b8a8c9a6">
+  <producedTypes>
+    <selectionType typeId="d199aea1-b855-4957-b88a-e9280ae35869" valueTypeId="68c2fc2f-6e1d-45de-afaa-519fc927dc0c"/>
+    <listType typeId="c1758f1c-319d-42fc-a3da-46639208b576" valueTypeId="c183e748-5c2a-4844-b910-858cc345c862"/>
+    <managerType typeId="ea6897f6-feb4-4042-abcf-2718be71c6c9" valueTypeId="b1bfbeae-310e-41c1-b850-e8afdbcc8862"/>
+    <recordSetType typeId="5eb7c1d3-8114-4cf9-8e32-7212a06924a7" valueTypeId="52d9c4d8-c438-45d8-b7b2-13e58ce9c297"/>
+    <recordKeyType typeId="affe1d3b-e186-4feb-8600-5e16dd73768f" valueTypeId="731114b7-28e8-4e12-8331-8029360a6254"/>
+    <recordType typeId="1453daf9-8f82-4db5-865a-671c6923eb2f" valueTypeId="9d425389-d190-4c0e-b6aa-af61895ac5f0"/>
+    <recordManagerType typeId="9ae26ea7-8e01-4346-8bb7-f7ea72b136fd" valueTypeId="c7066bc4-f5c1-4dd0-893e-629a7cf8d347"/>
+  </producedTypes>
+  <name>ум_ЖурналСобытийПакетовДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал событий пакетов данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ум_ЖурналСобытийПакетовДанных.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="ed4a01b3-fac4-4c5b-8862-e39b8af4051a">
+    <name>ДатаСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата события</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="596898e8-8bd8-4fb7-be4e-22489ceeaa43">
+    <name>НомерПопыткиОбработкиПакета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер попытки обработки пакета</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="eddf176b-eec5-4651-b2dd-74feeff1ec76">
+    <name>КлючАналитикиПакетаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ аналитики пакета данных</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ум_КлючиАналитикиПакетовДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="aca384bb-1049-4928-8117-819f4c7f0eed">
+    <name>Сообщение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <attributes uuid="4a55e027-cec5-4099-9348-ae3b938e337e">
+    <name>ИдентификаторРезультатаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор результата обработки</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="21cc2ce2-6c96-41d7-9f6d-83f05b1c8d96">
+    <name>ДлительностьОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длительность обработки</value>
+    </synonym>
+    <comment>Длительность обработки</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Длительность обработки сообщения в мс.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="59af87cf-91d5-40fe-bdc1-4596b28a245d">
+    <name>КлючРабочегоПотока</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ рабочего потока</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue"/>
+  </attributes>
+  <dimensions uuid="5d129296-91fa-45a0-bda4-301eeed989a7">
+    <name>ИдентификаторПакета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор пакета</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="867e4d4f-c7fc-409b-889a-cd02ba58c5c7">
+    <name>ВременнаяМеткаСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Временная метка события</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <forms uuid="d2e882d1-819b-4c34-9670-f48164ab7530">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

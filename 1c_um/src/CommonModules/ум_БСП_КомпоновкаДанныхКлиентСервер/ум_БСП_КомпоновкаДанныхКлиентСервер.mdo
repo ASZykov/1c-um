@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="47c5d5cf-2a39-4791-808b-1d240cfc36e4">
+  <name>ум_БСП_КомпоновкаДанныхКлиентСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ум БСП компоновка данных клиент сервер</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Data composition client server</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

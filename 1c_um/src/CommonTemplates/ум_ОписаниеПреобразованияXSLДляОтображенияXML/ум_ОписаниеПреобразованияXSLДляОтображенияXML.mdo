@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="578746ef-69e0-4efc-a307-4b372006525c">
+  <name>ум_ОписаниеПреобразованияXSLДляОтображенияXML</name>
+  <synonym>
+    <key>ru</key>
+    <value>Описание преобразования XSL для отображения XML</value>
+  </synonym>
+  <templateType>TextDocument</templateType>
+</mdclass:CommonTemplate>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8f46f235-7582-454a-aa8d-be46df4f4f43">
+  <producedTypes>
+    <objectType typeId="de2698cf-b061-4c25-a591-864ec48449c9" valueTypeId="4d1657d9-69bb-453e-8fa3-b2fbcf23139e"/>
+    <managerType typeId="7cf38b1e-1641-45b1-bdbe-348ed36cae38" valueTypeId="aa169102-b90c-4d98-9782-bedcf9970c53"/>
+  </producedTypes>
+  <name>ум_АдминистрированиеМногопоточногоКонвейера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование многопоточного конвейера</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ум_АдминистрированиеМногопоточногоКонвейера.Form.Форма</defaultForm>
+  <forms uuid="ce28035b-23be-4ed5-a073-f1b4c54a8978">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="9e012ca0-35ef-41c0-b2f0-d05ebe599f1b">
+    <name>СтатистикаПакетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статистика пакетов</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

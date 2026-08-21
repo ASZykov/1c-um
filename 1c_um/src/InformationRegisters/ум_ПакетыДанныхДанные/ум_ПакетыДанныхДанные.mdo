@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0961a008-64fd-4b5c-a61b-fe5e7c57436f">
+  <producedTypes>
+    <selectionType typeId="35db20a7-8f11-4cc1-9618-62702a0f133b" valueTypeId="42e9b07f-a9a3-4456-8e42-6e29c08c440f"/>
+    <listType typeId="b19b1599-f51c-4c12-9e98-87ff8eb48b22" valueTypeId="1e46de37-c1b5-4fd2-b67e-75c8df8fb798"/>
+    <managerType typeId="a1393a8e-d79a-46ae-b955-1acb42f16f71" valueTypeId="4a5f7ad1-b7e7-4605-9324-840dceff67a2"/>
+    <recordSetType typeId="c3030a7c-0c4e-40e2-afc2-877c4fd8ff84" valueTypeId="7a4774f6-15c8-44a5-bc0d-7f925bfdd4ef"/>
+    <recordKeyType typeId="fbaa73ff-0acb-40b4-adf7-8b674142d2d6" valueTypeId="8473b199-390b-4881-bedf-80b053e217fa"/>
+    <recordType typeId="f8213a48-6406-47ea-8fea-d5fc076e11bc" valueTypeId="21b3d72c-17f4-43c9-8396-dbd85a3a4700"/>
+    <recordManagerType typeId="5f56682d-9861-4016-9d0d-a3c33e9f1241" valueTypeId="751540d9-578e-4297-9242-d79b2cf81cd9"/>
+  </producedTypes>
+  <name>ум_ПакетыДанныхДанные</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пакеты данных (данные)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ум_ПакетыДанныхДанные.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ум_ПакетыДанныхДанные.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="f43a832c-09b6-41b0-9443-f9d66ba19422">
+    <name>Данные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="8a4378df-b2ae-4985-8571-828636815508">
+    <name>ИдентификаторПакета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор пакета</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <forms uuid="501625c4-042b-4c44-bb7c-dc47439124d3">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6aae4d49-de52-4bfa-ae81-28a47916c6ff">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

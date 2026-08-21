@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06d81c6f-c4dd-4875-ab53-bea3b808407f">
+  <name>ум_МногопоточныйКонвейерКонтрольРабочихФЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Многопоточный конвейер: контроль рабочих ФЗ</value>
+  </synonym>
+  <methodName>CommonModule.ум_ПакетыДанныхОбработка.ум_МногопоточныйКонвейерКонтрольРабочихФЗ</methodName>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

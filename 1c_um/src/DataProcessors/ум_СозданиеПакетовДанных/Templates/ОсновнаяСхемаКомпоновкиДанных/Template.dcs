@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияДанных</dataPath>
+			<field>ВерсияДанных</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПометкаУдаления</dataPath>
+			<field>ПометкаУдаления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоЗаписей</dataPath>
+			<field>КоличествоЗаписей</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество записей</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Предопределенный</dataPath>
+			<field>Предопределенный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Родитель</dataPath>
+			<field>Родитель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИмяПредопределенныхДанных</dataPath>
+			<field>ИмяПредопределенныхДанных</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОшибкиОбработкиПакетов.НомерСтроки</dataPath>
+			<field>ОшибкиОбработкиПакетов.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИспользоватьОбщийСписокОшибок</dataPath>
+			<field>ИспользоватьОбщийСписокОшибок</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтоГруппа</dataPath>
+			<field>ЭтоГруппа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УдалятьПакетПриУспешнойОбработке</dataPath>
+			<field>УдалятьПакетПриУспешнойОбработке</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОшибкиОбработкиПакетов.ОписаниеОшбики</dataPath>
+			<field>ОшибкиОбработкиПакетов.ОписаниеОшбики</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОшибкиОбработкиПакетов.Ссылка</dataPath>
+			<field>ОшибкиОбработкиПакетов.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПопытокОбработкиПакета</dataPath>
+			<field>КоличествоПопытокОбработкиПакета</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяЖизниУправляющегоФЗ</dataPath>
+			<field>ВремяЖизниУправляющегоФЗ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПакетовНаРабочееФЗ</dataPath>
+			<field>КоличествоПакетовНаРабочееФЗ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Комментарий</dataPath>
+			<field>Комментарий</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТаймаутУдаленияПакета</dataPath>
+			<field>ТаймаутУдаленияПакета</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Активность</dataPath>
+			<field>Активность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяЖизниРабочегоФЗ</dataPath>
+			<field>ВремяЖизниРабочегоФЗ</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>ОшибкиОбработкиПакетов</dataPath>
+			<field>ОшибкиОбработкиПакетов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИмяФункции</dataPath>
+			<field>ИмяФункции</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТаймаутПовторнойОбработкиПакета</dataPath>
+			<field>ТаймаутПовторнойОбработкиПакета</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПовторнаяОбработкаПакетовСОшибками</dataPath>
+			<field>ПовторнаяОбработкаПакетовСОшибками</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КлючРегламентногоЗадания</dataPath>
+			<field>КлючРегламентногоЗадания</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИспользоватьПроизвольныйКодОбработки</dataPath>
+			<field>ИспользоватьПроизвольныйКодОбработки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИмяДляРазработчика</dataPath>
+			<field>ИмяДляРазработчика</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПакетовНаУправляющееФЗ</dataPath>
+			<field>КоличествоПакетовНаУправляющееФЗ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоРабочихФЗ</dataPath>
+			<field>КоличествоРабочихФЗ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроизвольныйКодОбработки</dataPath>
+			<field>ПроизвольныйКодОбработки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХешСуммаПроизвольногоКодаОбработки</dataPath>
+			<field>ХешСуммаПроизвольногоКодаОбработки</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	1 КАК КоличествоЗаписей,
+	*
+	
+ИЗ
+	Справочник.ум_СпособыОбработкиПакетов КАК ум_СпособыОбработкиПакетов</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">BeginAndEnd</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеПолейГруппировки</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">BeginAndEnd</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemAuto"/>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

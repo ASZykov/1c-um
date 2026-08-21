@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fcf10ed6-270c-4943-88d2-92f0b833b351">
+  <name>Константы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Константы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>ChartOfCharacteristicTypes.ум_Константы</content>
+  <content>InformationRegister.ум_ЗначенияКонстант</content>
+  <content>CommonModule.ум_РаботаСКонстантами</content>
+  <parentSubsystem>Subsystem.ум_УниверсальныеМеханизмы</parentSubsystem>
+</mdclass:Subsystem>

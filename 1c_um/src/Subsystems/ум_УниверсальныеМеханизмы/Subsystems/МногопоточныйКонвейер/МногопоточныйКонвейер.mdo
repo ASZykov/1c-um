@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="50e65af9-9491-489f-96ce-4b541d8b87c7">
+  <name>МногопоточныйКонвейер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Многопоточный конвейер</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>ScheduledJob.ум_МногопоточныйКонвейерОбработкаПакетов</content>
+  <content>ScheduledJob.ум_МногопоточныйКонвейерОбслуживаниеСистемы</content>
+  <content>CommonModule.ум_ПакетыДанныхСерверПривилегированный</content>
+  <content>CommonTemplate.ум_ОписаниеПреобразованияXSLДляОтображенияXML</content>
+  <content>Catalog.ум_СпособыОбработкиПакетов</content>
+  <content>Enum.ум_СостоянияПакетаДанных</content>
+  <content>InformationRegister.ум_ПакетыДанных</content>
+  <content>InformationRegister.ум_ПакетыДанныхДанные</content>
+  <content>InformationRegister.ум_ЖурналСобытийПакетовДанных</content>
+  <content>CommonModule.ум_ПакетыДанныхПовтИсп</content>
+  <content>DataProcessor.ум_АдминистрированиеМногопоточногоКонвейера</content>
+  <content>Catalog.ум_ОписанияОшибокОбработкиПакетов</content>
+  <content>CommonModule.ум_ШаблонФункцииОбработчикаПакета</content>
+  <content>DataProcessor.ум_ИзменениеПакетовДанных</content>
+  <content>CommonModule.ум_ПакетыДанныхОбработка</content>
+  <content>Role.ум_ЧтениеПакетыДанных</content>
+  <content>CommonCommand.ум_Пакеты</content>
+  <content>Catalog.ум_КлючиАналитикиПакетовДанных</content>
+  <content>CommonModule.ум_ПакетыДанныхОбслуживание</content>
+  <content>CommonModule.ум_ПакетыДанныхОбщегоНазначения</content>
+  <content>CommonModule.ум_ПакетыДанных</content>
+  <content>CommonForm.ум_ФормаПросмотраДанных</content>
+  <content>CommonModule.ум_ИзменениеПакетовДанных</content>
+  <content>ScheduledJob.ум_МногопоточныйКонвейерКонтрольРабочихФЗ</content>
+  <content>InformationRegister.ум_ЛогФоновыхЗаданийПакетов</content>
+  <content>Report.ум_АнализМногопоточнойОбработки</content>
+  <content>Enum.ум_ВидыФЗПакетовДанных</content>
+  <content>Enum.ум_ЛогированиеСобытийФЗ</content>
+  <content>Constant.ум_ТаймаутУдаленияЛоговФЗ</content>
+  <content>Constant.ум_ВключитьЛогированиеФЗ</content>
+  <content>CommonModule.ум_ЛогированиеПакетыДанных</content>
+  <content>CommonModule.ум_РаботаСКонстантами</content>
+  <content>DataProcessor.ум_СозданиеПакетовДанных</content>
+  <content>CommonModule.ум_СозданиеПакетовДанных</content>
+  <parentSubsystem>Subsystem.ум_УниверсальныеМеханизмы</parentSubsystem>
+</mdclass:Subsystem>

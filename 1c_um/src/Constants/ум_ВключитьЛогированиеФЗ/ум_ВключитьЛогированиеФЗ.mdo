@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ad85efa1-334d-430d-8bcb-0c780ea3cdd7">
+  <producedTypes>
+    <managerType typeId="7d6649ae-f83e-41d5-8e48-a8677622c035" valueTypeId="a72fac1e-ef03-4d15-807e-c15079d710ea"/>
+    <valueManagerType typeId="64f6b0fd-c518-47f8-a3bf-1f7fd5b55c49" valueTypeId="e18ca554-5d57-4796-9f47-84af3cdcd87a"/>
+    <valueKeyType typeId="a1dff83f-a32c-4064-9909-50ae2679b808" valueTypeId="abd6ed63-43ee-4d25-b553-b39da750bf58"/>
+  </producedTypes>
+  <name>ум_ВключитьЛогированиеФЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Включить логирование ФЗ</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

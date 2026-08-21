@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="132ad8d0-3b10-48f4-9e42-96e3478510ba">
+  <name>ум_МногопоточныйКонвейерОбработкаПакетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Многопоточный конвейер: обработка пакетов данных</value>
+  </synonym>
+  <methodName>CommonModule.ум_ПакетыДанныхОбработка.ОбработатьПакетыДанных</methodName>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>
