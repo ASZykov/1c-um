@@ -28,6 +28,22 @@
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
+      <command>0:ed57ff7a-a3e5-4097-9890-7bc85a3efbe2</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>0:08f6ad2e-f131-4426-ad35-001417143c4f</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>0:4e1b3f32-e485-4742-9128-b034caf31de0</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>0:7e2d36e8-ffa4-46d4-9a54-da5021c5c2d7</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
       <command>Constant.ум_ВключитьЛогированиеФЗ.StandardCommand.Open</command>
       <visible/>
     </visibilityFragments>
@@ -45,6 +61,11 @@
       <group>NavigationPanelImportant</group>
       <commands>InformationRegister.ум_ПакетыДанных.StandardCommand.OpenList</commands>
       <commands>Catalog.ум_СпособыОбработкиПакетов.StandardCommand.OpenList</commands>
+    </placementFragments>
+    <placementFragments>
+      <group>ActionsPanelTools</group>
+      <commands>0:4e1b3f32-e485-4742-9128-b034caf31de0</commands>
+      <commands>0:7e2d36e8-ffa4-46d4-9a54-da5021c5c2d7</commands>
     </placementFragments>
   </commandsPlacement>
   <commandsOrder>
@@ -67,6 +88,9 @@
       <commands>DataProcessor.ум_АдминистрированиеМногопоточногоКонвейера.StandardCommand.Open</commands>
       <commands>DataProcessor.ум_СозданиеПакетовДанных.StandardCommand.Open</commands>
       <commands>DataProcessor.ум_ИзменениеПакетовДанных.StandardCommand.Open</commands>
+      <commands>0:08f6ad2e-f131-4426-ad35-001417143c4f</commands>
+      <commands>0:4e1b3f32-e485-4742-9128-b034caf31de0</commands>
+      <commands>0:7e2d36e8-ffa4-46d4-9a54-da5021c5c2d7</commands>
       <commands>Constant.ум_ВключитьЛогированиеФЗ.StandardCommand.Open</commands>
       <commands>Constant.ум_ТаймаутУдаленияЛоговФЗ.StandardCommand.Open</commands>
       <commands>CommonForm.ум_ФормаПросмотраДанных.StandardCommand.Open</commands>

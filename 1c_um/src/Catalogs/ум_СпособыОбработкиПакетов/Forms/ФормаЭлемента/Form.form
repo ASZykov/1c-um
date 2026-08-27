@@ -140,6 +140,7 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.Description</segments>
       </dataPath>
+      <titleLocation>Left</titleLocation>
       <extendedTooltip>
         <name>НаименованиеРасширеннаяПодсказка</name>
         <id>269</id>
@@ -161,7 +162,7 @@
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
       <extInfo xsi:type="form:InputFieldExtInfo">
-        <width>1</width>
+        <width>20</width>
         <autoMaxHeight>true</autoMaxHeight>
         <horizontalStretch>true</horizontalStretch>
         <wrap>true</wrap>
@@ -189,6 +190,7 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.ИмяДляРазработчика</segments>
       </dataPath>
+      <titleLocation>Left</titleLocation>
       <toolTip>
         <key>ru</key>
         <value>Имя для разработчика</value>
@@ -214,10 +216,10 @@
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
       <extInfo xsi:type="form:InputFieldExtInfo">
-        <width>40</width>
+        <width>20</width>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
-        <horizontalStretch>false</horizontalStretch>
+        <horizontalStretch>true</horizontalStretch>
         <wrap>true</wrap>
         <chooseType>true</chooseType>
         <typeDomainEnabled>true</typeDomainEnabled>

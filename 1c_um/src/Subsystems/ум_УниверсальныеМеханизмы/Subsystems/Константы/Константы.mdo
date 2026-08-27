@@ -8,7 +8,9 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>ChartOfCharacteristicTypes.ум_Константы</content>
+  <content>f8f9fc67-6933-4e7d-9630-57cc987dd81d</content>
   <content>InformationRegister.ум_ЗначенияКонстант</content>
+  <content>0b360319-bec7-4f71-825c-ae54ec598bcf</content>
   <content>CommonModule.ум_РаботаСКонстантами</content>
   <parentSubsystem>Subsystem.ум_УниверсальныеМеханизмы</parentSubsystem>
 </mdclass:Subsystem>

@@ -3,7 +3,7 @@
   <name>УниверсальныеМеханизмы</name>
   <synonym>
     <key>ru</key>
-    <value>Универсальные механизмы</value>
+    <value>Универсальные механизмы, редакция 3</value>
   </synonym>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="9c7b7835-c2ac-4e26-a914-5c5a852eb548"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="b4f8b26e-79f1-4d69-ac79-f4470704a21b"/>
@@ -15,22 +15,38 @@
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
-  <vendor>Универсальные механизмы</vendor>
+  <vendor>Зыков Александр Сергеевич</vendor>
   <version>3.0.0.1</version>
   <usedMobileApplicationFunctionalities/>
-  <clientApplicationWindowsOpenVariant>OpenDataInDialogs</clientApplicationWindowsOpenVariant>
+  <caption>
+    <key>ru</key>
+    <value>Универсальные механизмы</value>
+  </caption>
+  <shortCaption>
+    <key>ru</key>
+    <value>Универсальные механизмы</value>
+  </shortCaption>
   <defaultLanguage>Language.Русский</defaultLanguage>
+  <briefInformation>
+    <key>ru</key>
+    <value>Универсальные механизмы, редакция 3</value>
+  </briefInformation>
+  <detailedInformation>
+    <key>ru</key>
+    <value>Универсальные механизмы, редакция 3</value>
+  </detailedInformation>
+  <logo/>
   <copyright>
     <key>ru</key>
-    <value>Зыков А.С.</value>
+    <value>Зыков Александр Сергеевич</value>
   </copyright>
   <vendorInformationAddress>
     <key>ru</key>
-    <value>Зыков А.С.</value>
+    <value>https://github.com/ASZykov</value>
   </vendorInformationAddress>
   <configurationInformationAddress>
     <key>ru</key>
-    <value>Зыков А.С.</value>
+    <value>https://github.com/ASZykov/1c-um</value>
   </configurationInformationAddress>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
@@ -48,8 +64,7 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.ум_УниверсальныеМеханизмы</subsystems>
-  <commonPictures>CommonPicture.ум_УниверсальныеМеханизмы</commonPictures>
-  <commonPictures>CommonPicture.ум_УниверсальныеМеханизмы24</commonPictures>
+  <commonPictures>CommonPicture.ум_Шестерни</commonPictures>
   <roles>Role.ум_ЧтениеПакетыДанных</roles>
   <commonTemplates>CommonTemplate.ум_ОписаниеПреобразованияXSLДляОтображенияXML</commonTemplates>
   <commonModules>CommonModule.ум_ПакетыДанных</commonModules>

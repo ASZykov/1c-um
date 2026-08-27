@@ -1108,6 +1108,7 @@
       <topLevelParent xsi:type="core:UndefinedValue"/>
       <showRoot>true</showRoot>
       <allowGettingCurrentRowURL>true</allowGettingCurrentRowURL>
+      <userSettingsGroup>1:02023637-7868-4a5f-8576-835a76e0c9ba</userSettingsGroup>
     </extInfo>
     <showCommandBarNeedDereferenced>true</showCommandBarNeedDereferenced>
   </items>

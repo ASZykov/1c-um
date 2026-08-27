@@ -7,7 +7,7 @@
     </visibilityFragments>
   </commandsVisibility>
   <subsystemsOrder>
-    <subsystems>Subsystem.ум_УниверсальныеМеханизмы.Subsystem.Константы</subsystems>
     <subsystems>Subsystem.ум_УниверсальныеМеханизмы.Subsystem.МногопоточныйКонвейер</subsystems>
+    <subsystems>Subsystem.ум_УниверсальныеМеханизмы.Subsystem.Константы</subsystems>
   </subsystemsOrder>
 </cmi:CommandInterface>

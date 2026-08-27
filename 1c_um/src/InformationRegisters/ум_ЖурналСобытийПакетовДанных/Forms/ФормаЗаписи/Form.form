@@ -14,6 +14,9 @@
         <userVisible>
           <common>true</common>
         </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>1/0:781e5d8e-18f0-4d04-afda-bfe8bf087d00</segments>
+        </dataPath>
         <titleLocation>Top</titleLocation>
         <extendedTooltip>
           <name>СпособОбработкиРасширеннаяПодсказка</name>
@@ -54,6 +57,9 @@
         <userVisible>
           <common>true</common>
         </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>1/0:8eed4946-2185-4ee5-b77b-4400bba941b4</segments>
+        </dataPath>
         <titleLocation>Top</titleLocation>
         <extendedTooltip>
           <name>СостояниеПакетаДанныхРасширеннаяПодсказка</name>

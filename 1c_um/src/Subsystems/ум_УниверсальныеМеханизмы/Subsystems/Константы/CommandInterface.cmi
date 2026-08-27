@@ -11,6 +11,10 @@
       <command>InformationRegister.ум_ЗначенияКонстант.StandardCommand.OpenList</command>
       <visible/>
     </visibilityFragments>
+    <visibilityFragments>
+      <command>0:0b360319-bec7-4f71-825c-ae54ec598bcf</command>
+      <visible/>
+    </visibilityFragments>
   </commandsVisibility>
   <commandsPlacement>
     <placementFragments>
@@ -26,6 +30,7 @@
     <orderFragments>
       <group>NavigationPanelOrdinary</group>
       <commands>InformationRegister.ум_ЗначенияКонстант.StandardCommand.OpenList</commands>
+      <commands>0:0b360319-bec7-4f71-825c-ae54ec598bcf</commands>
     </orderFragments>
   </commandsOrder>
 </cmi:CommandInterface>

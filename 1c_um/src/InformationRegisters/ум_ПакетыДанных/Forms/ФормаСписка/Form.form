@@ -620,7 +620,7 @@
           <type>Popup</type>
           <extInfo xsi:type="form:PopupGroupExtInfo">
             <picture xsi:type="core:PictureRef">
-              <picture>CommonPicture.ум_УниверсальныеМеханизмы</picture>
+              <picture>0:b739a7fa-52b6-4696-8278-179a529097f2</picture>
             </picture>
             <representation>Auto</representation>
             <importance>Normal</importance>

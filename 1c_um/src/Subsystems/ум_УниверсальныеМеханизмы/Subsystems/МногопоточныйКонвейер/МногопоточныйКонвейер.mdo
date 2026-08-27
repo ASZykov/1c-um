@@ -19,7 +19,12 @@
   <content>CommonModule.ум_ПакетыДанныхПовтИсп</content>
   <content>DataProcessor.ум_АдминистрированиеМногопоточногоКонвейера</content>
   <content>Catalog.ум_ОписанияОшибокОбработкиПакетов</content>
+  <content>08f6ad2e-f131-4426-ad35-001417143c4f</content>
+  <content>7e2d36e8-ffa4-46d4-9a54-da5021c5c2d7</content>
   <content>CommonModule.ум_ШаблонФункцииОбработчикаПакета</content>
+  <content>5faaa60f-fda5-4a93-ade0-20aa94500e14</content>
+  <content>552fe0bf-816b-4965-a6ef-2a151307f8fa</content>
+  <content>e7f9b1c4-cf8e-4a69-b502-d859d1aac466</content>
   <content>DataProcessor.ум_ИзменениеПакетовДанных</content>
   <content>CommonModule.ум_ПакетыДанныхОбработка</content>
   <content>Role.ум_ЧтениеПакетыДанных</content>
@@ -39,6 +44,7 @@
   <content>Constant.ум_ВключитьЛогированиеФЗ</content>
   <content>CommonModule.ум_ЛогированиеПакетыДанных</content>
   <content>CommonModule.ум_РаботаСКонстантами</content>
+  <content>ed57ff7a-a3e5-4097-9890-7bc85a3efbe2</content>
   <content>DataProcessor.ум_СозданиеПакетовДанных</content>
   <content>CommonModule.ум_СозданиеПакетовДанных</content>
   <parentSubsystem>Subsystem.ум_УниверсальныеМеханизмы</parentSubsystem>
